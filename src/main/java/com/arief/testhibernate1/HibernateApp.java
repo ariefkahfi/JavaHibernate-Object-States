@@ -15,7 +15,12 @@ public class HibernateApp {
         SessionFactory sessionFactory = HibernateSetup.getInstance();
         
         
-        
+//        TRANSIENT STATE  
+//        Person arief = new Person()
+//        arief.setName("Arief");
+//        arief.setAddress("Test address");
+//        TRANSIENT STATE  
+
         Session session = sessionFactory.openSession();        
         session.beginTransaction();
        
